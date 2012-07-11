@@ -1,0 +1,6 @@
+Bézier curves are a way of mathematically describing curved lines. In 1962 the French engineer Pierre Bézier brings them to the attention of the world–he uses them to design automobile bodies for Renault. 
+
+In the age of the computer the bézier has proven to be very popular as an efficient way for describing the curves in vector graphics. Cubic bézier curves (as depicted) form the basis of PostScript, Illustrator and PDF.
+
+The bézier algorithm is but one way of describing curves. It makes it more easy to draw certain kind of shapes then others. The visual language of our time is shaped by this algorithm.
+
