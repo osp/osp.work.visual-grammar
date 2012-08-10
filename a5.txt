@@ -1,6 +1,7 @@
-Bézier curves are a way of mathematically describing curved lines. In 1962 the French engineer Pierre Bézier brings them to the attention of the world–he uses them to design automobile bodies for Renault. 
+In the world of PostScript people seem to think that the Bézier algorithm is the only way to make a curved line. At first sight Béziers seem to be very easy to handle. But this is only true when one uses very few Bézier curve elements, so this is of course what everyone does. What most people don't realize is that one limits oneself considerably by doing that. A tricky contradiction is born.
 
-In the age of the computer the bézier has proven to be very popular as an efficient way for describing the curves in vector graphics. Cubic bézier curves (as depicted) form the basis of PostScript, Illustrator and PDF.
-
-The bézier algorithm is but one way of describing curves. It makes it more easy to draw certain kind of shapes then others. The visual language of our time is shaped by this algorithm.
-
+It seeems to be an unwritten rule that one Bézier is enough for a curve over 90 degrees. It is fairly easy to then make a ‘nice’ curve, but although the ‘Bézier-operator’ has placed the control points all by him/herself, the curve is mainly determined by the Bézier algorithm.
+    This ‘lazyness’ results into two things. First it causes restriction in shape. Secondly, because there is not a very personal influence on the curves, it causes some sort of sameness that gets boring after a short while. These two things are obviously closely related to each other: they are both caused by the fact that the Bézier algorithm has very specific shape properties, or, put in a different way, by the restrictions of Béziers.
+    Certain shapes are simply impossible to make, in such a case one needs to divide the Bézier into two Béziers, which almost doubles the number of points (control points plus the so called anchor points). This however, does not double the handling difficulty as one might think, it at least quadruples it.
+    All this makes Bézier curves not very useful for subtle curve manipulation as required for type design.
+Letterror, *Letterror, a magazine*, September 1989
